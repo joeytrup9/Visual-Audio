@@ -1,3 +1,4 @@
+from tkinter.constants import X
 from graphics import *
 import random
 from PIL import Image
@@ -22,14 +23,20 @@ for i in range(HEIGHT):
         arr[j][i] = Point(j,i)
         #if i % 5 == 0 and j % 5 == 0:
         #    arr[j][i].draw(win)
+#rand = random.randrange(0, 500)
+#rand2 = random.randrange(0,500)
 
-# while 1:
-#     rand = random.randrange(0, 500)
-#     rand2 = random.randrange(0,500)
-#     try:
-#         arr[rand][rand2].draw(win)
-#     except GraphicsError:
-#         pass
-#         #print("oops already drawn")
+activated_pixels = [arr[250][250]]
 
-#win.getMouse()
+while 1:
+    for x in activated_pixels:
+        activated_pixels.append()
+    
+    
+
+win.getMouse()
+
+def getPixelCoordinates(Point):
+    for x in arr:
+        for y in arr[x]:
+            if
